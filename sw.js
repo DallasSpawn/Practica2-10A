@@ -24,6 +24,6 @@ self.addEventListener("fetch", (event) => {
 function actividadImagen (event) {
     if (event.request.url.includes(".jpg")) {
         console.log(event.request.url);
-        event.respondWith(fetch("img/gato.jpg"));
+        event.respondWith(fetch("./img/gato.jpg"));
     } 
 }
